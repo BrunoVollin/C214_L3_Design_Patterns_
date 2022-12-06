@@ -16,7 +16,6 @@ class Observer1 implements IObserver {
         this.id = id;
     }
     update(text: string): void {
-        //count all words
         const words = text.split(" ");
         console.log(`Observer1 ${this.id} recebeu a mensagem: ${text} e tem ${words.length} palavras`);      
     }
